@@ -308,21 +308,6 @@ body {
 	font-size: 0.6em;
 }
 
-footer {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	background-color: var(--accent-colour-1);
-	height: 5vh;
-	border-radius: 16px 16px 0 0;
-}
-
-#footer-text {
-	color: white;
-	font-size: 0.8rem;
-}
-
 @media only screen and (max-width: 1900px) {
 	.divider {
 		margin-bottom: 1rem;
