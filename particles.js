@@ -1,5 +1,6 @@
-window.addEventListener("DOMContentLoaded", () => {
-	tsParticles.load({
+window.addEventListener("DOMContentLoaded", async () => {
+	await loadSnowPreset(tsParticles);
+	await tsParticles.load({
 		id: "tsparticles",
 		options: {
 			preset: "snow",
