@@ -2,6 +2,7 @@
 	--main-background-colour: #2c2b2b;
 	--accent-colour-1: #1d1c1c;
 	--accent-colour-2: #4b73e3;
+	--accent-colour-3: gold;
 	--box-background: #04111c;
 	--skill-background: #010512;
 	--main-font-colour: white;
@@ -35,7 +36,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-	background-color: var(--box-background);
+	background-color: var(--accent-colour-2);
 	border-radius: 10px;
 }
 
@@ -134,7 +135,7 @@ body {
 	width: 0;
 	border: none;
 	margin-bottom: 3rem;
-	border-top: 2px solid white;
+	border-top: 2px solid var(--accent-colour-3);
 	color: var(--main-font-colour);
 }
 
@@ -303,6 +304,10 @@ body {
 .duties > li {
 	margin-top: 2%;
 	font-size: 0.6em;
+}
+
+.duties > li::marker {
+	color: var(--accent-colour-2);
 }
 
 @media only screen and (max-width: 1900px) {
