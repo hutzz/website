@@ -3,6 +3,7 @@
 	--accent-colour-1: #1d1c1c;
 	--accent-colour-2: #4b73e3;
 	--accent-colour-3: gold;
+	--accent-colour-4: #000fff;
 	--box-background: #04111c;
 	--skill-background: #010512;
 	--main-font-colour: white;
@@ -146,13 +147,31 @@ body {
 	color: var(--main-font-colour);
 }
 
+.tiny-divider {
+	width: 0;
+	border: none;
+	margin-bottom: 1rem;
+	border-top: 2px solid var(--accent-colour-4);
+	color: var(--main-font-colour);
+}
+
 .animate-divider {
 	animation: expand-divider 0.5s ease-out forwards;
+}
+
+.animate-tiny-divider {
+	animation: expand-tiny-divider 0.5s ease-out forwards;
 }
 
 @keyframes expand-divider {
 	to {
 		width: 80%;
+	}
+}
+
+@keyframes expand-tiny-divider {
+	to {
+		width: 40%;
 	}
 }
 
@@ -369,10 +388,6 @@ body {
 	.subtitle {
 		font-size: 1.6rem;
 	}
-	#me {
-		max-height: 180px;
-		max-width: 219.8px;
-	}
 	.social-img > img {
 		max-height: 60px;
 		max-width: 80px;
@@ -402,8 +417,13 @@ body {
 		font-size: 1.3rem;
 	}
 	#me {
-		max-height: 120px;
-		max-width: 146.4px;
+		max-height: 180px;
+		max-width: 219.8px;
+	}
+	@keyframes expand-divider {
+		to {
+			width: 90%;
+		}
 	}
 	.social-img > img {
 		max-height: 40px;
