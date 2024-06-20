@@ -131,6 +131,13 @@ body {
 	color: var(--main-font-colour);
 }
 
+#me {
+	max-height: 300px;
+	max-width: 366px;
+	border-radius: 128px 128px;
+	margin: 2rem 0;
+}
+
 .divider {
 	width: 0;
 	border: none;
@@ -333,6 +340,10 @@ body {
 }
 
 @media only screen and (max-width: 1440px) {
+	#me {
+		max-height: 240px;
+		max-width: 292.8px;
+	}
 	.social-img > img {
 		max-height: 80px;
 		max-width: 100px;
@@ -357,6 +368,10 @@ body {
 	}
 	.subtitle {
 		font-size: 1.6rem;
+	}
+	#me {
+		max-height: 180px;
+		max-width: 219.8px;
 	}
 	.social-img > img {
 		max-height: 60px;
@@ -385,6 +400,10 @@ body {
 	}
 	.subtitle {
 		font-size: 1.3rem;
+	}
+	#me {
+		max-height: 120px;
+		max-width: 146.4px;
 	}
 	.social-img > img {
 		max-height: 40px;
